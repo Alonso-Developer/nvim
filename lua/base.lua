@@ -1,5 +1,6 @@
 local set = vim.opt
 
+
 set.number = true
 set.relativenumber = true
 set.encoding = 'utf-8'
@@ -15,4 +16,7 @@ set.breakindent = true
 set.backup = false
 set.writebackup = false
 set.termguicolors = true
+set.smarttab = true
+set.expandtab = false
+set.shiftwidth = 4
 vim.g.mapleader = ','
