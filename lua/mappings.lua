@@ -6,3 +6,5 @@ setkey('n', '<Leader>cls', '<Cmd>nohlsearch<CR>', opts)
 setkey('n', '<Leader>,', '<Cmd>BufferPrevious<CR>', opts)
 setkey('n', '<Leader>.', '<Cmd>BufferNext<CR>', opts)
 setkey('n', '<Leader>d', '<Cmd>BufferClose<CR>', opts)
+setkey('t', '<Esc>', '<C-\\><C-n>', opts)
+
