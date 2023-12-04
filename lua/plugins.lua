@@ -27,6 +27,8 @@ require('lazy').setup({
 	{
 		'neoclide/coc.nvim',
 		branch = 'release',
+
+
 		config = function()
 		    require('pyright')
 		end
