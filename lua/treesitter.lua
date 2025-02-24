@@ -2,11 +2,10 @@ require('nvim-treesitter.configs').setup{
 	ensure_installed = {
 		'python',
 		'lua',
-		'java',
-		'c_sharp'
 	},
-	auto_install = true,
+	auto_install = false,
 	highlight = {
 		enable = true
-	}
+	},
+	ignore_install = {'csv'}
 }
