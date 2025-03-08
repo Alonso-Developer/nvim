@@ -20,3 +20,5 @@ set.smarttab = true
 set.expandtab = false
 set.shiftwidth = 4
 vim.g.mapleader = ','
+
+vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
