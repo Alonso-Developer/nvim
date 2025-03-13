@@ -14,6 +14,7 @@
 + [numToStr/Comment.nvim](https://github.com/numToStr/Comment.nvim)
 + [romgrk/barbar.nvim](https://github.com/romgrk/barbar.nvim)
 + [lewis6991/gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
++ [Saimo/peek.nvim](https://github.com/Saimo/peek.nvim)
 
 # FONTS
 + [Inconsolata LGC](https://www.nerdfonts.com/font-downloads)
