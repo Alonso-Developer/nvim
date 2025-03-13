@@ -26,30 +26,30 @@ require('lazy').setup({
 	'ms-jpq/chadtree',
 	cmd = 'CHADopen',
     },
-    {
-	'ms-jpq/coq_nvim',
-	dependencies = {
-	    'ms-jpq/coq.artifacts'
-	},
-	init = function()
-	    vim.g.coq_settings = {
-		auto_start = 'shut-up'
-	    }
-	end,
-	config = function()
-	    require('coq_config')
-	end,
-    },
+ --    {
+	-- 'ms-jpq/coq_nvim',
+	-- dependencies = {
+	--     'ms-jpq/coq.artifacts'
+	-- },
+	-- init = function()
+	--     vim.g.coq_settings = {
+	-- 	auto_start = 'shut-up'
+	--     }
+	-- end,
+	-- config = function()
+	--     require('coq_config')
+	--     require('lsp')
+	-- end,
+ --    },
     {
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
 	'neovim/nvim-lspconfig',
-	config = function()
-	    require('mason').setup()
-	    require('mason-lspconfig').setup()
-	    require('mason.api.command').MasonUpdate()
-	    -- require('lsp')
-	end,
+	opts = {
+	    inlay_hints = {
+		enabled = true,
+	    }
+	}
     },
     {
 	'nvim-lualine/lualine.nvim',
@@ -96,6 +96,10 @@ require('lazy').setup({
 	    vim.api.nvim_create_user_command('PeekOpen', require('peek').open, {})
 	    vim.api.nvim_create_user_command('PeekClose', require('peek').close, {})
 	end,
+    },
+    {	
+	'hrsh7th/nvim-cmp',
+	'hrsh7th/cmp-nvim-lsp',
     },
 })
 
