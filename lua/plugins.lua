@@ -101,5 +101,11 @@ require('lazy').setup({
 	'hrsh7th/nvim-cmp',
 	'hrsh7th/cmp-nvim-lsp',
     },
+    {
+	'akinsho/toggleterm.nvim',
+	config = function()
+	    require('term')
+	end
+    }
 })
 

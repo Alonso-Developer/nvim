@@ -47,8 +47,8 @@ lsp.ruff.setup{
 	    docstringCodeFormat = true,
 	},
 	lint = {
-	  preview = true,
-	  select = {"ALL"},
+	  preview = false,
+	  -- select = {"ALL"},
 	  ignore = {
 	    "D100",
 	    "CPY001",
@@ -179,7 +179,7 @@ require'lspconfig'.basedpyright.setup{
 		    reportAssertAlwaysTrue = 'warning',
 		    reportPrivateLocalImportUsage = false,
 		    reportUnusedParameter = 'information',
-		    reportUnannotatedClassAttribute = 'information',
+		    reportUnannotatedClassAttribute = false,
 		    reportMissingTypeArgument = false,
 		},
 
