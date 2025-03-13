@@ -15,5 +15,4 @@ set.breakindent = true
 set.backup = false
 set.writebackup = false
 set.termguicolors = true
-
 vim.g.mapleader = ','
