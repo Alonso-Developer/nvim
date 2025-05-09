@@ -106,6 +106,13 @@ require('lazy').setup({
 	config = function()
 	    require('term')
 	end
+    },
+    {
+	"NeogitOrg/neogit",
+	dependencies = {
+	    "nvim-lua/plenary.nvim",
+	    "sindrets/diffview.nvim",
+	}
     }
 })
 

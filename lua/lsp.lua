@@ -188,3 +188,5 @@ require'lspconfig'.basedpyright.setup{
     }
 }
 
+lsp.clangd.setup{}
+

@@ -8,6 +8,9 @@ setkey('n', '<Leader>.', '<Cmd>BufferNext<CR>', opts)
 setkey('n', '<Leader>d', '<Cmd>BufferClose<CR>', opts)
 setkey('n', '<Leader>t', '<Cmd>ToggleTerm<CR>', opts)
 setkey('t', '<Esc>', '<C-\\><C-n>', opts)
+setkey('t', '<Esc>', '<C-\\><C-n>', opts)
+setkey('n', '<Leader>g', '<Cmd>Neogit<CR>', opts)
+
 
 
 local setkey = vim.keymap.set
